@@ -14,9 +14,9 @@ namespace Frågesport
             Console.WriteLine("Väm är ormen");
             Console.WriteLine("1: Korvberra ");
             Console.WriteLine("2: Din mor ");
-            Console.WriteLine("3: Lukas");
+            Console.WriteLine("3: Han som lägger på extra grillkrydda på sinna pomfritts");
 
-            //     Fråga om att göra den hät till en metod eftersom pog vill inte förstå att pog finns
+            //     Fråga om att göra den här till en metod eftersom pog vill inte förstå att pog finns
 
             //pog = "";
             //while (pog != "1" && pog != "2" && pog != "3")
@@ -42,7 +42,7 @@ namespace Frågesport
             }
             else if (pog == "2" || pog == "3")
             {
-                Console.WriteLine("fel dum");
+                Console.WriteLine("Fel Dum");
             }
             qReset();
             pog = "";
@@ -74,10 +74,10 @@ namespace Frågesport
             qReset();
             pog = "";
 
-            Console.WriteLine("Lukas är fortnite?");
-            Console.WriteLine("1: Ja");
-            Console.WriteLine("2: Nej");
-            Console.WriteLine("3: True");
+            Console.WriteLine("Varför älskar Lukas Fortnite");
+            Console.WriteLine("1: Han gillar det för att det är ett genuint bra spel enligt han");
+            Console.WriteLine("2: Falskt. Han gillar inte fortnite för det är ett dåligt spel enligt han");
+            Console.WriteLine("3: Han är Fortnite Lukas");
 
             while (pog != "1" && pog != "2" && pog != "3")
             {
@@ -100,15 +100,57 @@ namespace Frågesport
             qReset();
             pog = "";
 
+            Console.WriteLine("Det finns ingen mer fråga. Men du kan trycka på Enter igen för att se dina resultat.");
+            Console.ReadLine();
+            Console.Clear();
+
+            if (score == 0)
+            {
+                Console.WriteLine("Jahopp");
+                Console.WriteLine("Det gick inte så bra");
+                Console.WriteLine("Poäng: " + score);
+            }
+            else if (score == 1)
+            {
+                Console.WriteLine("Ojdå");
+                Console.WriteLine("Inte så många rätt svar du skev in där.");
+                Console.WriteLine("Poäng: " + score);
+            }
+            else if (score == 2)
+            {
+                Console.WriteLine("Helt ok enlig mig");
+                Console.WriteLine("66% är ett godtjänt betyg väll?");
+                Console.WriteLine("Poäng: " + score);
+            }
+            else if (score == 3)
+            {
+                Console.WriteLine("Du hade alla rätt");
+                Console.WriteLine("Det ser bra ut.");
+            
+
+                Console.WriteLine("Poäng: " + score);
+            }
+
+
+
+
+
             Console.ReadLine();
         }
         static void qReset()
         {
+            //string pog = "";
             Console.WriteLine("Tryck Enter för nästa fråga");
             Console.ReadLine();
             Console.Clear();
             //vill få in pog = ""; men vill inte fungera av någon anledning
+            //pog = "";
+
         }
 
+
+
     }
+
 }
+
