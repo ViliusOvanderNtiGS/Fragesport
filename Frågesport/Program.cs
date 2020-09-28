@@ -6,6 +6,12 @@ namespace Frågesport
     {
         static void Main(string[] args)
         {
+            //string replay = "";
+            //while (replay != "Replay")
+            //{
+                
+            
+           
             string pog = "";
             //pog är lika med rätt svar
 
@@ -126,16 +132,27 @@ namespace Frågesport
             {
                 Console.WriteLine("Du hade alla rätt");
                 Console.WriteLine("Det ser bra ut.");
+                Console.WriteLine(@"          
+             ___________
+            '._==_==_=_.'
+            .-\:      /-.
+           | (|:.     |) |
+            '-|:.     |-'
+              \::.    /
+               '::. .'
+                 ) (
+               _.' '._
+              `*******`");
             
 
                 Console.WriteLine("Poäng: " + score);
             }
 
-
-
-
+            Console.WriteLine("Skriv Replay för att spela om.");
 
             Console.ReadLine();
+            
+            //}
         }
         static void qReset()
         {
